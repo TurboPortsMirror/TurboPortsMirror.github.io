@@ -1,21 +1,73 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>TurboPortsMirrorWebsite</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
 <style>
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('./CaviarDreams.ttf');
+}
+.topcontainer {
+    position: relative;
+    background-color:rgb(184, 0, 0);
+    bottom: 21px;
+    width: 1380px;
+    right: 10px;
+    height: 88px;
+}
+img {
+    width: 335px;
+    vertical-align:middle;
+    margin:10px 70px;
+}
+.button1 {
+    color: rgb(48, 47, 47);
+    margin: -97px 450px;
+    vertical-align: top;
+    font-size: 27px;
+    border: none;
+    background-color: transparent;
+    height: 100px;
+    transition: 0.37s;
+    opacity: 1;
+    cursor: pointer;
+}
+.button2 {
+    color: rgb(48, 47, 47);
+    margin: -118px 700px;
+    vertical-align: top;
+    font-size: 27px;
+    border: none;
+    background-color: transparent;
+    height: 100px;
+    transition: 0.37s;
+    opacity: 1;
+    cursor: pointer;
+}
+.hh {
+  font-family: 'Nunito', sans-serif;
+  color:rgb(199, 199, 199);
+  margin: 100px 300px;
+}
+.button1:hover {margin: -101px 450px;}
+.button2:hover {margin: -122px 700px;}
+body {
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 50vh;
+}
 </style>
-<script src=""></script>
 <body>
-
-<img src="img_la.jpg" alt="LA" style="width:100%">
-
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
+<div class="topcontainer">
+ <img src="TurboPortsMirrorLogoWebsite.png">
+ <button class="button1" onclick="window.location.href='https://nothinglinux.github.io/NothingLinuxWebsite/index.html';">Nothing Linux</button>
+ <button class="button2" onclick="window.location.href='https://github.com/TurboPortsMirror';">Github</button>
 </div>
-
+<h1 class="hh">Welcome To Official TurboPorts Mirror Website!</h1>
 </body>
 </html> 
