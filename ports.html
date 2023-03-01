@@ -5,6 +5,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+<link href="./bootstrap.css" rel="stylesheet">
 <style>
 @font-face {
   font-family: 'CaviarDreams';
@@ -12,7 +18,7 @@
 }
 .topcontainer {
     position: relative;
-    background-color:rgb(184, 0, 0);
+    background-color: none;
     bottom: 21px;
     width: 1380px;
     right: 10px;
@@ -37,7 +43,7 @@ img {
 }
 .button2 {
     color: rgb(48, 47, 47);
-    margin: -118.5px 700px;
+    margin: -115.5px 700px;
     vertical-align: top;
     font-size: 26px;
     border: none;
@@ -49,7 +55,7 @@ img {
 }
 .button3 {
     color: rgb(48, 47, 47);
-    margin: -140.5px 900px;
+    margin: -134.5px 900px;
     vertical-align: top;
     font-size: 26px;
     border: none;
@@ -61,7 +67,7 @@ img {
 }
 .button4 {
     color: rgb(48, 47, 47);
-    margin: -161.5px 1100px;
+    margin: -152.5px 1100px;
     vertical-align: top;
     font-size: 26px;
     border: none;
@@ -76,12 +82,31 @@ img {
   color:rgb(199, 199, 199);
   margin: 100px 300px;
 }
+@keyframes fadeIn {
+  from {box-shadow: 0 0rem 0rem rgba(0, 0, 0, 0.15);}
+  to {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);}
+}
+.searchbox {
+    font-family: 'Nunito', sans-serif;
+    vertical-align: top;
+    margin: 140px 450px;
+    background-color: white;
+    border: none;
+    font-size: 26px;
+    border-radius: 5px;
+    animation: fadeIn 1.5s
+}
+::placeholder {
+    color: black;
+    opacity: 1;
+}
 .button1:hover {margin: -101px 450px;}
-.button2:hover {margin: -122.5px 700px;}
-.button3:hover {margin: -144.5px 900px;}
-.button4:hover {margin: -165.5px 1100px;}
+.button2:hover {margin: -119.5px 700px;}
+.button3:hover {margin: -138.5px 900px;}
+.button4:hover {margin: -156.5px 1100px;}
+.searchbox {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);}
 body {
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 </style>
@@ -93,6 +118,6 @@ body {
  <button class="button3" onclick="window.location.href='https://turboportsmirror.github.io/';">Home</button>
  <button class="button4" onclick="window.location.href='./ports.html';">Ports</button>
 </div>
-<h1 class="hh">Welcome To Official TurboPorts Mirror Website!</h1>
+<input type="text" class="searchbox p-3 mb-5 bg-white rounded" placeholder="Search ports">
 </body>
 </html> 
